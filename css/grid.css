@@ -1,0 +1,24 @@
+.containerstart {
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(auto-fit,auto);
+}
+
+header {
+  grid-column: 1/-1;
+  grid-row:1/1;
+}
+.topnav {
+  grid-column: 1/-1;
+  grid-row:3/4;
+}
+
+.responsive {
+  grid-column: 1/-1;
+  grid-row:auto;
+}
+
+.image {
+  grid-column: 1/-5;
+  grid-row: 4/5;
+}
