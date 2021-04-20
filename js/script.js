@@ -7,3 +7,18 @@ function ChangeResponsive() {
     x.className = "nav";
   }
 }
+
+var slideIndex = 0;
+swap();
+
+function swap() {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(swap, 4000); // Change image every 2 seconds
+}

@@ -1,11 +1,16 @@
-/* Add a background color to the top navigation */
+/* FORTSÄTT KOLLA PÅ */
+body {
+   background-image: linear-gradient(to right,#fbf7f5,#f9f1f1);
+}
+
+/* Styling för navigationsmeny */
 .nav {
  background-color:#f2f3f4;
  overflow: hidden;
  border-style: double;
 }
 
-/* Style the links inside the navigation bar */
+/* Style för länkar i navigationsmeny */
 .nav a {
  float: left;
  display: block;
@@ -64,4 +69,12 @@
 header {
   text-align: center;
   display: block;
+}
+
+.slideshowpostion {
+  width: 100%;
+}
+
+#logo {
+  width: 100%;
 }

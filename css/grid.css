@@ -18,13 +18,21 @@ header {
   grid-row:auto;
 }
 
-.street {
-
-  grid-column: 5/8;
-  grid-row: 3/10;
-  justify-content: center;
+.slideshowpostion {
+  grid-column: 3/11;
+  grid-row: 4/6;
 }
 
-.street img {
-    width: 100px;
+/* FÖR BAKGRUNDSSIDAN
+#logo {
+  grid-column: 11/12;
+  grid-row: 4/5;
+}
+*/
+
+@media screen and (max-width: 600px) {
+  .slideshowpostion {
+    grid-column: 2/12;
+    grid-row: 4/6;
+  }
 }
