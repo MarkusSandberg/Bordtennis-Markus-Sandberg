@@ -1,78 +1,131 @@
 /* FORTSÄTT KOLLA PÅ */
 body {
-   background-image: linear-gradient(to right,#fbf7f5,#f9f1f1);
+  background-image: linear-gradient(to right, #fbf7f5, #ebe0db);
+  font-family: 'Zilla Slab', serif;
 }
 
 /* Styling för navigationsmeny */
 .nav {
- background-color:#f2f3f4;
- overflow: hidden;
- border-style: double;
+  background-color: #f2f3f4;
+  overflow: hidden;
+  border-style: outset;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.nav:hover {
+  box-shadow: 10px 10px 10px grey;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
 }
 
 /* Style för länkar i navigationsmeny */
 .nav a {
- float: left;
- display: block;
- color: black;
- text-align: center;
- padding: 10px 10px;
- text-decoration: none;
- font-size: 17px;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .nav a:hover:not(:last-child) {
- background-color: #0d9ecf;
- color: black;
+  background-color: #0d9ecf;
+  color: black;
+  text-shadow: 2px 2px 2px grey;
 }
 
 /* Add an active class to highlight the current page */
 .nav a.active {
- background-color: #bebebe;
- color: black;
+  background-color: #bebebe;
+  color: black;
 }
 
 /* Hide the link that should open and close the nav on small screens */
 .nav .icon {
- display: none;
+  display: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav (.icon) */
 @media screen and (max-width: 600px) {
- .nav a:not(:first-child) {
-   display: none;
- }
- .nav a.icon {
-   float: right;
-   display: block;
- }
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav a.icon {
+    float: right;
+    display: block;
+    font-size: 15px;
+  }
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
- .nav.responsive {
-   position: relative;
- }
- .nav.responsive a.icon {
-   position: absolute;
-   right: 0;
-   top: 0;
- }
- .nav.responsive a {
-   float: none;
-   display: block;
-   text-align: left;
- }
-}
+  .nav.responsive {
+    position: relative;
+  }
 
-header {
-  text-align: center;
-  display: block;
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .slideshowpostion {
   width: 100%;
+  border-style: outset;
+  border-width: thick;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.slideshowpostion:hover {
+  box-shadow: 10px 10px 10px grey;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  display: inline;
+}
+
+section {
+  border-style: outset;
+  border-width: thick;
+  background-color: white;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+  box-shadow: 2px 2px 5px grey;
+}
+
+section:hover {
+  box-shadow: 10px 10px 10px grey;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  margin: 10px;
 }
 
 #logo {

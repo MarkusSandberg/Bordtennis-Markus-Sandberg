@@ -1,26 +1,32 @@
 .containerstart {
-  display:grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-auto-rows: minmax(25px,auto);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(25px, auto);
 }
 
 header {
   grid-column: 1/-1;
-  grid-row:1/1;
+  grid-row: 1/1;
 }
+
 .nav {
   grid-column: 1/-1;
-  grid-row:2/3;
+  grid-row: 2/3;
 }
 
 .responsive {
   grid-column: 1/-1;
-  grid-row:auto;
+  grid-row: auto;
 }
 
 .slideshowpostion {
   grid-column: 3/11;
   grid-row: 4/6;
+}
+
+.textsection {
+  grid-column: 2/12;
+  grid-row: 7/9;
 }
 
 /* FÖR BAKGRUNDSSIDAN
@@ -29,7 +35,6 @@ header {
   grid-row: 4/5;
 }
 */
-
 @media screen and (max-width: 600px) {
   .slideshowpostion {
     grid-column: 2/12;

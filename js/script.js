@@ -20,5 +20,5 @@ function swap() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(swap, 4000); // Change image every 2 seconds
+  setTimeout(swap, 6000);
 }
