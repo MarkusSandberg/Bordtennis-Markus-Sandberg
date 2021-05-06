@@ -1,4 +1,3 @@
-/* FORTSÄTT KOLLA PÅ */
 body {
   background-image: linear-gradient(to right, #fbf7f5, #ebe0db);
   font-family: 'Zilla Slab', serif;
@@ -128,6 +127,34 @@ p {
   margin: 10px;
 }
 
+footer {
+  border-style: outset;
+  border-width: thick;
+  background-color: white;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+  box-shadow: 2px 2px 5px grey;
+}
+
+footer:hover {
+  box-shadow: 10px 10px 10px grey;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+}
+
+h3 {
+  text-align: center;
+}
+
+.quote {
+  text-align: center;
+  color: #303030;
+}
+
 #logo {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }
