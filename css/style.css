@@ -49,7 +49,7 @@ body {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav (.icon) */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .nav a:not(:first-child) {
     display: none;
   }
@@ -62,7 +62,7 @@ body {
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .nav.responsive {
     position: relative;
   }
@@ -102,7 +102,7 @@ header {
 h1 {
   font-size: 50px;
   display: inline;
-  color: red;
+  color: blue;
 }
 
 section {
