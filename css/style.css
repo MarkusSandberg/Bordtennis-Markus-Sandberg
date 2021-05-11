@@ -62,7 +62,7 @@ body {
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 812px) {
   .nav.responsive {
     position: relative;
   }
